@@ -1,4 +1,3 @@
-
 import type { User } from './types';
 import { createIoCContainer } from './ioc';
 
@@ -25,7 +24,6 @@ const app = () => {
   delete (window as any).__CONFIG__;
   ioc.register('apiConfig', config.api);
   
-
   renderUsers();
 };
 
